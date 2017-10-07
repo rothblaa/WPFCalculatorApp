@@ -1,0 +1,22 @@
+﻿<Window x:Name="Window" x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Adam's Calculator" Height="350" Width="525">
+    <Grid Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
+        <Button x:Name="Button1" Content="Add Numbers" HorizontalAlignment="Left" Margin="67,143,0,0" VerticalAlignment="Top" Width="120" Click="Button1_Click"/>
+        <Button x:Name="Button2" Content="Clear Numbers" HorizontalAlignment="Left" Margin="373,143,0,0" VerticalAlignment="Top" Width="120" Click="Button2_Click"/>
+        <TextBox x:Name="FirstNumber" HorizontalAlignment="Left" Height="23" Margin="67,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SecondNumber" HorizontalAlignment="Left" Height="23" Margin="214,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ResultsNumber" HorizontalAlignment="Left" Height="23" Margin="373,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="FirstNumberLabel" Content="FirstNumber" HorizontalAlignment="Left" Margin="67,84,0,0" VerticalAlignment="Top" Width="120" Foreground="White" BorderBrush="Black"/>
+        <Label x:Name="SecondNumberLabel" Content="SecondNumber" HorizontalAlignment="Left" Margin="214,84,0,0" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Label x:Name="ResultLabel" Content="Result" HorizontalAlignment="Left" Margin="373,84,0,0" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <Button x:Name="subtractButton" Content="Subtract Numbers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="67,168,0,0" Click="subtractButton_Click"/>
+        <Button x:Name="multiplyButton" Content="Multiply Numbers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="214,143,0,0" Click="multiplyButton_Click"/>
+        <Button x:Name="divisionButton" Content="Divide Numbers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="214,168,0,0" Click="divisionButton_Click"/>
+    </Grid>
+</Window>
